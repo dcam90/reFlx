@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="bottom">
+
+    <ImageView
+        android:layout_width="616dp"
+        android:layout_height="616dp"
+        android:id="@+id/back"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/scorebutton" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/design" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="346dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo5"
+            android:layout_above="@+id/scorebutton"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/startbutton"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:onClick="playClick"
+            android:src="@drawable/playimage2"
+            android:layout_marginBottom="73dp"
+            android:layout_alignBottom="@+id/scorebutton"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/soundbutton"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:baselineAlignBottom="false"
+            android:clickable="false"
+            android:onClick="changeSound"
+            android:src="@drawable/sound" />
+
+        <ImageButton
+            android:id="@+id/scorebutton"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:onClick="scoreClick"
+            app:srcCompat="@drawable/highscore"
+            android:layout_above="@+id/soundbutton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="75dp" />
+
+        <ImageButton
+            android:id="@+id/htpbutton"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            android:onClick="howToPlay"
+            app:srcCompat="@drawable/howtoplay2"
+            android:layout_above="@+id/soundbutton"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>

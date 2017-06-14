@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">reFlx</string>
+    <string name="level">Level: </string>
+    <string name="score">Score: </string>
+    <string name="boxes_remaining">Boxes Remaining: </string>
+    <string name="game_over">GAME OVER!</string>
+    <string name="reset_game">NEW GAME?</string>
+    <string name="next_level">NEXT LEVEL</string>
+    <string name="level_completed">LEVEL COMPLETED</string>
+    <string name="go_home">GO TO TITLE SCREEN</string>
+    <string name="con_tinue">CONTINUE</string>
+    <string name="well_done">WELL DONE!</string>
+    <string name="high_score">NEW HIGH SCORE!</string>
+</resources>
